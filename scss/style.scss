@@ -1,9 +1,15 @@
+
+
+
 header{
        
     background-color:  rgb(251, 225, 146);
-    background-image:url(../imagenes/indexbackgroun.png) ;
-    height: 400px;
+    background-image:url(../imagenes/indexbackgroun.png);
+    height: 100px;
     background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    
     
     nav{
 
@@ -16,15 +22,19 @@ header{
         font-weight: 200;
         padding: 5px;
         margin-top: 100px;
-        ul a{
+
+         
+            ul a{
  
             text-decoration: none;
             color: black;
             margin: 30px;
             align-items: center;
+          
+            }
         }
     }
-}
+
 .grid-container {
   
     display: grid;
@@ -44,6 +54,7 @@ header{
     color: yellow;
 
 }
+
 
 .lettering{
 
@@ -128,35 +139,8 @@ p{
   
 }
 
-header{
 
-    background-color:  rgb(251, 225, 146);
-    background-image:url(../imagenes/indexbackgroun.png) ;
-    height: 400px;
-    background-repeat: no-repeat;
-    
-}
 
- header nav{
-
- 
-    text-decoration: none;
-    background-color: rgb(251, 225, 146);
-    margin: 50px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
-    padding: 5px;
-    margin-top: 100px;
-
-}
-header nav ul a{
- 
-    text-decoration: none;
-    color: black;
-    margin: 30px;
-    align-items: center;
-}
 .tatuajes{
 
     background-color: aliceblue;
@@ -216,6 +200,7 @@ p {
 }
 
 
+
   
 footer {
     font-family: Arial, Helvetica, sans-serif;
@@ -224,4 +209,13 @@ footer {
     padding: 5px;
     
 
+}
+
+
+
+@media (max-width: 700px)
+header {
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
 }
