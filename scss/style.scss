@@ -1,39 +1,7 @@
 
 
 
-header{
-       
-    background-color:  rgb(251, 225, 146);
-    background-image:url(../imagenes/indexbackgroun.png);
-    height: 100px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-    nav{
-
- 
-        text-decoration: none;
-        background-color: rgb(251, 225, 146);
-        margin: 50px;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 200;
-        padding: 5px;
-        margin-top: 100px;
-
-         
-            ul a{
- 
-            text-decoration: none;
-            color: black;
-            margin: 30px;
-            align-items: center;
-          
-            }
-        }
-    }
+@import "header";
 
 .grid-container {
   
@@ -81,13 +49,13 @@ h1 {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(251, 225, 146);
+    // background-color: rgb(251, 225, 146);
     color:beige
   
 }
 a{
     text-decoration: none;
-    background-color: rgb(251, 225, 146);
+    // background-color: rgb(251, 225, 146);
 }
 p{
     display: inline;
@@ -115,23 +83,12 @@ p{
     width: 250px;
     min-height: 250px;
 }
-h1 {
-    display: flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(251, 225, 146);
-    color:beige
-   
 
-    
-    
-    
-}
 
 
 a{
     text-decoration: none;
-    background-color: rgb(251, 225, 146);
+    // background-color: rgb(251, 225, 146);
 }
 p{
     display: inline;
@@ -213,9 +170,10 @@ footer {
 
 
 
-@media (max-width: 700px)
-header {
-    flex-direction: column;
-    height: 300px;
-    width: 100%;
-}
+@media (max-width: 700px) {
+    header {
+      flex-direction: column;
+      height: 300px;
+      width: 100%;
+    }
+  }
