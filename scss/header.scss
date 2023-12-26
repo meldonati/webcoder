@@ -1,62 +1,69 @@
-header {
-    // background-color: rgb(251, 225, 146);
-    background-image: url(../imagenes/indexbackgroun.png);
-    background-size: 100% auto;  
-    height: 100%;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    display: flex;
-    background-position: 50% 45%; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     }
 
-  
-    .menu-hamburguesa {
-
-      img {
-           display: none;
-      }
-    }
-  
-  
-    nav {
-      text-decoration: none;
-      background-color: rgba(251, 225, 146, 0.5);
-      margin: 100px;
-      font-size: 20px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 200;
-      padding: 5px;
-    //   margin-top: 500px;
+     header {
+        position: relative;
+        background-image: url(../imagenes/indexbackgroun.png);
+        background-size: 100% auto;
+        height: 100%;
+        padding-bottom: 150px;
+        background-repeat: no-repeat;
+        display: flex;
+        background-position: 45% 45%;
       
+        .menu-hamburguesa {
+          img {
+            display: none;
+          }
+        }
       
-  
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        // margin-top: 600px;
-       
-        
-
-  
-        a {
+        nav {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
           text-decoration: none;
-          color: black;
-          margin: 30px;
-          align-items: center;
-         
+          background-color: rgba(251, 225, 146, 0.5);
+          margin: 100px 0 0 0; // Ajusta el margen superior para desplazar el nav hacia abajo
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 200;
+          padding: 5px;
+          :hover{
+            color: beige;
+          }
+      
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center; 
+      
+      
+            a {
+              text-decoration: none;
+              color: black;
+              margin: 30px;
+              align-items: center;
+            }
+          }
         }
       }
-    }
-  }
+      
+  
   h1 {
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 500px;
+    margin-top: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
     // background-color: rgb(251, 225, 146);
     color:beige
-   
+    
 
+     }
     
-    
-    
-}

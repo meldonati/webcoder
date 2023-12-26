@@ -1,28 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Shadows+Into+Light&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
+  position: relative;
   background-image: url(../imagenes/indexbackgroun.png);
   background-size: 100% auto;
   height: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
   background-repeat: no-repeat;
   display: flex;
-  background-position: 50% 45%;
+  background-position: 45% 45%;
 }
 header .menu-hamburguesa img {
   display: none;
 }
 header nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-decoration: none;
   background-color: rgba(251, 225, 146, 0.5);
-  margin: 100px;
+  margin: 100px 0 0 0;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
   padding: 5px;
 }
+header nav :hover {
+  color: beige;
+}
 header nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 header nav ul a {
   text-decoration: none;
@@ -34,103 +50,201 @@ header nav ul a {
 h1 {
   display: flex;
   justify-content: center;
-  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 500px;
+  margin-top: 50px;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 60px;
   color: beige;
 }
 
-.grid-container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #404045;
+}
+
+.grid-container-index {
   display: grid;
-  grid-template-rows: repeat(2, 300px);
-  grid-template-columns: repeat(2, 300px);
-  row-gap: 50px;
-  column-gap: 100px;
-  background-color: aliceblue;
-  margin-top: 100px;
-  text-decoration: none;
+  grid-template-columns: 500px 700px;
+  grid-template-rows: 300px 300px;
+  gap: 50px;
+  margin-bottom: 100px;
 }
 
-.griditem {
-  border: 2px solid black;
-  text-decoration: none;
-  color: yellow;
-}
-
-.lettering {
-  width: 250px;
-  min-height: 250px;
-}
-
-.tradi {
-  width: 250px;
-  min-height: 250px;
-}
-
-.cover {
-  width: 250px;
-  min-height: 250px;
-}
-
-.promos {
-  width: 250px;
-  min-height: 250px;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
+.uno {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   color: beige;
+  padding: 60px;
 }
 
-a {
-  text-decoration: none;
+.dos {
+  padding: 40px;
+  height: 50px;
+  width: 60px;
 }
 
-p {
-  display: inline;
+.tres {
+  border-radius: 10px;
 }
 
-.lettering {
-  width: 250px;
-  min-height: 250px;
+.cuatro {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: beige;
+  padding: 120px;
 }
 
-.tradi {
-  width: 250px;
-  min-height: 250px;
+.tatuador {
+  border-radius: 25px;
 }
 
-.cover {
-  width: 250px;
-  min-height: 250px;
+.tatuando {
+  border-radius: 25px;
 }
 
-.promos {
-  width: 250px;
-  min-height: 250px;
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(251, 225, 146, 0.5);
+  color: beige;
+  padding: 10px;
 }
 
-a {
-  text-decoration: none;
+ul {
+  text-align: center;
 }
 
-p {
-  display: inline;
+.insta {
+  height: 30px;
+}
+
+.face {
+  height: 30px;
 }
 
 .tatuajes {
-  background-color: aliceblue;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 160px;
+  padding-bottom: 150px;
+  padding-right: 60px;
+}
+
+.cardneo {
+  margin-left: 50px;
+  background-image: url(../imagenes/tradi.png);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  width: 500px;
+  border-radius: 25px;
+  background-size: cover;
+}
+
+.cardcuidados {
+  margin-left: 50px;
+  background-image: url(../imagenes/deskin_kit_completo_para_el_cuidado_del_tatuaje_imagen1.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  width: 500px;
+  border-radius: 25px;
+  background-size: cover;
+}
+
+.lettering {
+  margin-left: 50px;
+  background-image: url(../imagenes/Block-Like-Lettering-Tattoo-Design-1024x683.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  width: 500px;
+  border-radius: 25px;
+  background-size: cover;
+}
+
+h2 {
+  border-radius: 60px;
+  background-color: rgba(251, 225, 146, 0.5);
+  display: flex;
+  font-family: "Shadows Into Light", cursive;
+  padding-left: 50px;
+  font-size: 25px;
+}
+
+.lettering:active {
+  background-image: url(../imagenes/lettering2.jpeg);
+}
+
+.cardcuidados:active {
+  background-image: url(../imagenes/deskin_hidratantesolar-545ce626532b9d104017027319005797-480-0.jpg);
+}
+
+.cardneo:active {
+  background-image: url(../imagenes/image5.jpg);
+}
+
+.cardneo a {
+  display: inline-block;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  background-color: #404045;
+  margin-top: 400px;
+  border: 2px solid beige;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 180px;
+}
+
+.lettering a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  background-color: #404045;
+  margin-top: 400px;
+  border: 2px solid beige;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 180px;
+}
+
+.cardcuidados a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  background-color: #404045;
+  margin-top: 400px;
+  border: 2px solid beige;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 180px;
+}
+
+.tatoofrase p {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+  margin-top: 60px;
+  display: flexbox;
+  margin-left: 90px;
+  margin-right: 90px;
+  align-items: flex-start;
+  border: 2px solid beige;
+  border-radius: 20px;
+  padding: 20px 20px 20px;
 }
 
 .ilustraciones {
-  background-color: aliceblue;
-}
-
-p {
-  text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: right;
+  background-color: #404045;
 }
 
 .guerrera {
@@ -173,11 +287,75 @@ p {
   margin: 55px;
 }
 
-footer {
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.ubicacion h3 {
+  background-color: rgba(251, 225, 146, 0.5);
+  font-family: "Shadows Into Light", cursive;
+  padding-left: 50px;
+  font-size: 40px;
+  text-align: center;
+}
+.ubicacion .mapa {
+  margin-top: 30px;
+}
+.ubicacion .direccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ubicacion .direccion h4 {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(251, 225, 146);
   color: beige;
-  padding: 5px;
+  margin-top: 20px;
+}
+
+/*..seccion ilustrciones..*/
+a {
+  text-decoration: none;
+}
+
+.guerrera {
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+  margin: 55px;
+}
+
+.mila {
+  width: 200px;
+  height: 300px;
+  border: 3px solid black;
+  margin: 55px;
+}
+
+.loco {
+  width: 200px;
+  height: 300px;
+  border: 3px solid black;
+  margin: 55px;
+}
+
+.simon {
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+  margin: 55px;
+}
+
+.brai {
+  width: 400px;
+  height: 300px;
+  border: 3px solid black;
+  margin: 55px;
+}
+
+.braiIndex {
+  width: 40%;
+  margin: 55px;
 }
 
 @media (max-width: 700px) {

@@ -1,0 +1,131 @@
+.tatuajes{
+
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    // align-items: flex-end;
+    padding-top: 160px;
+    padding-bottom: 150px;
+    padding-right: 60px;
+}
+
+
+
+.cardneo{
+    margin-left: 50px;
+    background-image: url(../imagenes/tradi.png);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 500px;
+    border-radius: 25px;
+    background-size: cover;
+       
+
+}
+
+
+.cardcuidados{
+    margin-left: 50px;
+    background-image: url(../imagenes/deskin_kit_completo_para_el_cuidado_del_tatuaje_imagen1.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 500px;
+    border-radius: 25px;
+    background-size: cover;
+
+
+}
+.lettering{
+    margin-left: 50px;
+    background-image: url(../imagenes/Block-Like-Lettering-Tattoo-Design-1024x683.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 500px;
+    border-radius: 25px;
+    background-size: cover;
+
+}
+h2{
+    border-radius: 60px;
+    background-color: rgba(251, 225, 146, 0.5);
+    display: flex;
+    font-family: 'Shadows Into Light', cursive;
+    padding-left: 50px;
+    font-size: 25px;
+
+    
+}
+.lettering:active{
+    background-image: url(../imagenes/lettering2.jpeg);
+}
+
+.cardcuidados:active{
+    background-image: url(../imagenes/deskin_hidratantesolar-545ce626532b9d104017027319005797-480-0.jpg);
+}
+.cardneo:active{
+    background-image: url(../imagenes/image5.jpg);
+}
+
+.cardneo a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    background-color: #404045;
+    margin-top: 400px;
+    border: 2px solid  beige;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 180px;
+   
+}
+
+.lettering a{
+
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    background-color: #404045;
+    margin-top: 400px;
+    border: 2px solid  beige;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 180px;
+}
+
+.cardcuidados a{
+
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: beige;
+    background-color: #404045;
+    margin-top: 400px;
+    border: 2px solid  beige;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 180px;
+}
+.tatoofrase{
+
+    p{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: beige;
+        margin-top: 60px;
+        display: flexbox;
+        margin-left: 90px;
+        margin-right: 90px;
+        align-items: flex-start;
+        border: 2px solid beige;
+        border-radius: 20px;
+        padding: 20px 20px 20px;
+
+     
+    }
+}
