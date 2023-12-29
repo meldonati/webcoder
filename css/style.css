@@ -72,7 +72,16 @@ body {
   grid-template-columns: 500px 700px;
   grid-template-rows: 300px 300px;
   gap: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  margin-top: 60px;
+}
+
+.griditem {
+  padding: 20px;
+}
+
+.tres {
+  border-radius: 10px;
 }
 
 .uno {
@@ -82,19 +91,13 @@ body {
   padding: 60px;
 }
 
-.dos {
-  padding: 40px;
-  height: 50px;
-  width: 60px;
-}
-
 .tres {
   border-radius: 10px;
 }
 
 .cuatro {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: beige;
   padding: 120px;
 }
@@ -112,6 +115,7 @@ footer {
   background-color: rgba(251, 225, 146, 0.5);
   color: beige;
   padding: 10px;
+  margin-top: 100px;
 }
 
 ul {
@@ -287,10 +291,18 @@ h2 {
   margin: 55px;
 }
 
+.diosa {
+  width: 400px;
+  height: 300px;
+  border: 3px solid black;
+  margin: 55px;
+}
+
 .ubicacion {
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 .ubicacion h3 {
   background-color: rgba(251, 225, 146, 0.5);
@@ -299,70 +311,159 @@ h2 {
   font-size: 40px;
   text-align: center;
 }
-.ubicacion .mapa {
-  margin-top: 30px;
+.ubicacion .padre {
+  display: flex;
+  justify-content: space-between;
 }
-.ubicacion .direccion {
+.ubicacion .padre .mapa {
+  margin-top: 30px;
+  width: 48%;
+  justify-content: center;
+}
+.ubicacion .padre .mapa iframe {
+  margin-left: 20px;
+}
+.ubicacion .padre .direccion {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 48%;
+  justify-content: center;
+  margin-right: 20px;
 }
-.ubicacion .direccion h4 {
+.ubicacion .padre .direccion h4 {
   font-family: Arial, Helvetica, sans-serif;
   color: beige;
   margin-top: 20px;
+  font-size: 20px;
+  border: 2px solid beige;
+  border-radius: 20px;
+  padding: 20px 20px 20px;
 }
 
-/*..seccion ilustrciones..*/
-a {
-  text-decoration: none;
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border: 2px solid beige;
+  border-radius: 10px;
+}
+.form-section form label {
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-section form input, .form-section form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form-section form button {
+  background-color: rgba(251, 225, 146, 0.5);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.form-section form button:hover {
+  margin: 0px 10px;
+  color: beige;
 }
 
-.guerrera {
-  width: 300px;
-  height: 300px;
-  border: 3px solid black;
-  margin: 55px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.mila {
-  width: 200px;
-  height: 300px;
-  border: 3px solid black;
-  margin: 55px;
+.section-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-top: 40px;
+}
+.section-card div {
+  padding: 20px;
+  color: beige;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+}
+.section-card div p {
+  margin-top: 15px;
+  border: 2px solid beige;
+  border-radius: 15px;
+  padding: 20px 20px 20px;
+}
+.section-card img {
+  max-width: 60%;
+  margin-left: 100px;
 }
 
-.loco {
-  width: 200px;
-  height: 300px;
-  border: 3px solid black;
-  margin: 55px;
-}
-
-.simon {
-  width: 300px;
-  height: 300px;
-  border: 3px solid black;
-  margin: 55px;
-}
-
-.brai {
-  width: 400px;
-  height: 300px;
-  border: 3px solid black;
-  margin: 55px;
-}
-
-.braiIndex {
-  width: 40%;
-  margin: 55px;
-}
-
-@media (max-width: 700px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   header {
+    background-position: center;
+    padding-bottom: 50px;
+  }
+  header h1 {
+    margin-left: 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+  header nav {
+    display: flex;
+    background-color: rgba(251, 225, 146, 0.9);
+    margin: 0;
+    padding: 10px;
+  }
+  header nav ul {
     flex-direction: column;
-    height: 300px;
-    width: 100%;
+  }
+  header nav ul a {
+    margin: 0px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  header {
+    background-position: center;
+    padding-bottom: 50px;
+  }
+  header h1 {
+    margin-left: 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(251, 225, 146, 0.9);
+    margin: 0;
+    padding: 0px;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul a {
+    margin: 0px;
+    align-items: flex-end;
+    font-size: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .grid-container-index {
+    grid-template-columns: 1fr;
   }
 }
 

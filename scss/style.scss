@@ -2,81 +2,21 @@
 
 
 @import "header";
-@import "main";
+@import "inicio";
 @import "footer";
 @import "tatoo";
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Shadows+Into+Light&display=swap');
 @import "ilustraciones";
 @import "contacto";
+@import "tatoogiftcard";
+@import "medias";
 
 
 
 
-/*..seccion ilustrciones..*/
 
 
 
-a{
-    text-decoration: none;
-    // background-color: rgb(251, 225, 146);
-}
 
 
 
-.guerrera{
-
-    width:  300px;
-    height: 300px;
-    border: 3px solid black;
-    margin: 55px;
-
-
-}
-.mila{
-
-    width:  200px;
-    height: 300px;
-    border: 3px solid black;
-    margin: 55px;
-}
-.loco{
-    width:  200px;
-    height: 300px;
-    border: 3px solid black;
-    margin: 55px;
-}
-
-.simon{
-
-    width:  300px;
-    height: 300px;
-    border: 3px solid black;
-    margin: 55px;
-}
-.brai{
-
-    width:  400px;
-    height: 300px;
-    border: 3px solid black;
-    margin: 55px;
-}
- .braiIndex{
-     width: 40%;
-     margin: 55px;
-
-       
-}
-
-
-
-  
-
-
-
-@media (max-width: 700px) {
-    header {
-      flex-direction: column;
-      height: 300px;
-      width: 100%;
-    }
-  }

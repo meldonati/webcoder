@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    margin-bottom: 60px;
   
     h3 {
       background-color: rgba(251, 225, 146, 0.5);
@@ -11,20 +12,91 @@
       text-align: center;
     }
   
-    .mapa {
-      margin-top: 30px;
-    }
-  
-    .direccion {
+    .padre {
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      justify-content: space-between; 
+      
+      .mapa {
+        margin-top: 30px;
+        width: 48%;
+        justify-content: center;
+             
+        iframe{
+
+            margin-left: 20px;
+        }
+        
+      }
+
+      
+      .direccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 48%; 
+        justify-content: center;
+        margin-right: 20px;
+       
   
-      h4 {
-        font-family: Arial, Helvetica, sans-serif;
-        color: beige;
-        margin-top: 20px; // Espaciado opcional entre el mapa y la dirección
+        h4 {
+          font-family: Arial, Helvetica, sans-serif;
+          color: beige;
+          margin-top: 20px; 
+          font-size: 20px;
+          border: 2px solid beige;
+          border-radius: 20px;
+          padding: 20px 20px 20px;
+         
+        
+        }
       }
     }
-  }
   
+
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 30px;  
+    margin-bottom: 60px;  
+
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;  
+        max-width: 800px;  
+        padding: 20px;
+        border: 2px solid beige;
+        border-radius: 10px;
+
+        label{
+            color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input, textarea {
+            margin-bottom: 15px;  
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;  
+        }
+
+        button {
+            background-color: rgba(251, 225, 146, 0.5);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;  
+            
+        }
+        button:hover {
+            margin: 0px 10px;
+            color: beige;
+          }
+    }
+}
+
