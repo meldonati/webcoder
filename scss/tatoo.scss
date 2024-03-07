@@ -8,11 +8,18 @@
     padding-top: 160px;
     padding-bottom: 150px;
     padding-right: 60px;
+
+
 }
+
+
+  
+
 
 
 
 .cardneo{
+
     margin-left: 50px;
     background-image: url(../imagenes/tradi.png);
     height: 400px;
@@ -27,6 +34,7 @@
 
 
 .cardcuidados{
+
     margin-left: 50px;
     background-image: url(../imagenes/deskin_kit_completo_para_el_cuidado_del_tatuaje_imagen1.jpg);
     height: 400px;
@@ -129,3 +137,16 @@ h2{
      
     }
 }
+
+@media screen and (max-width: 600px) {
+    .tatuajes {
+      max-width: 100%;
+      width: 100%;
+      margin-left: 0px;
+      display: block;
+    }
+  }
+
+
+
+    

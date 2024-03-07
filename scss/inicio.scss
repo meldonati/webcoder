@@ -1,3 +1,4 @@
+@import "./mixin.scss";
 *{
     margin: 0;
     padding: 0;
@@ -40,24 +41,20 @@ body{
     
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: beige;
+    color:beige;
     padding: 60px;
 
     
 }
 
-// .dos{
+.dos{
 
-//     padding: 20px;
-//     // height: 50px;
-//     // width: 60px;
-// }
-
-.tres{
-
-    
-    border-radius: 10px;
+    padding: 20px;
+    height: 50px;
+    width: 60px;
 }
+
+
 .cuatro{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -68,19 +65,15 @@ body{
 
 }
 .tatuador{
-    border-radius: 25px;
+   @include redondeado (25px);
 }
 
-.tatuando{
-    border-radius: 25px;
-}
+.tatuando{ 
 
-@media  (min-width: 767px){
-   
-        background-color: aqua;
-        
-    
-    
+    @include redondeado (25px);
+
 }
+  
+
 
     

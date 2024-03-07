@@ -91,8 +91,10 @@ body {
   padding: 60px;
 }
 
-.tres {
-  border-radius: 10px;
+.dos {
+  padding: 20px;
+  height: 50px;
+  width: 60px;
 }
 
 .cuatro {
@@ -247,6 +249,14 @@ h2 {
   padding: 20px 20px 20px;
 }
 
+@media screen and (max-width: 600px) {
+  .tatuajes {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+  }
+}
 .ilustraciones {
   background-color: #404045;
 }
@@ -317,10 +327,11 @@ h2 {
 }
 .ubicacion .padre .mapa {
   margin-top: 30px;
-  width: 48%;
-  justify-content: center;
+  width: 100%;
 }
 .ubicacion .padre .mapa iframe {
+  width: 90%;
+  margin: 0;
   margin-left: 20px;
 }
 .ubicacion .padre .direccion {
@@ -328,8 +339,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 48%;
-  justify-content: center;
   margin-right: 20px;
+  margin-top: 100px;
+  margin-left: 10px;
 }
 .ubicacion .padre .direccion h4 {
   font-family: Arial, Helvetica, sans-serif;
@@ -411,7 +423,7 @@ h2 {
   margin-left: 100px;
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 370px) and (max-width: 768px) {
   header {
     background-position: center;
     padding-bottom: 50px;
@@ -461,9 +473,68 @@ h2 {
     font-size: 10px;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  .tatuajes {
+    display: block;
+    padding-top: 160px;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  .cardneo {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  .lettering {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+  .cardcuidados {
+    width: 80%;
+    margin-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 768px) {
   .grid-container-index {
-    grid-template-columns: 1fr;
+    display: block;
+  }
+  .tatuando {
+    display: none;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  .section-card {
+    display: block;
+  }
+  .ubicacion {
+    margin-top: 10px;
+  }
+  .ubicacion h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  .mapa {
+    width: 10%;
+  }
+  .mapa iframe {
+    margin-top: 600px;
+  }
+  .direccion {
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-left: 20px;
+  }
+  .diosa {
+    width: 300px;
+  }
+  .brai {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .mapa {
+    width: 48%;
   }
 }
 
